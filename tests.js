@@ -10,6 +10,19 @@ describe('helloWorld', function() {
       expect(helloWorld()).toBe("Hello, World!");
     });
     it("should never return 'undefined' when called", function() {
-      expect(helloWorld()).not.toBe(undefined);
+        expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+
+
+describe('checks if sayHello is a defined function', function() {
+    it('should be a defined function', function() {
+        expect(typeof sayHello).toBe('function');
+    });
+   it('should return a string when called', function() {
+       expect(typeof sayHello()).toBe('string');
+    });
+});
+
+

@@ -15,14 +15,19 @@ describe('helloWorld', function() {
 });
 
 
-
+// Exercise 2
 describe('checks if sayHello is a defined function', function() {
     it('should be a defined function', function() {
         expect(typeof sayHello).toBe('function');
     });
-   it('should return a string when called', function() {
-       expect(typeof sayHello()).toBe('string');
+    it('should return a string when called', function() {
+        expect(typeof sayHello()).toBe('string');
+        // Exercise 3
+    });
+    it('should return "Hello, Jane!', function () {
+        expect((console.assert(sayHello("Jane") === "Hello, Jane!")) === undefined).toBe(true);
     });
 });
+
 
 

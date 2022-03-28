@@ -16,6 +16,10 @@ function helloWorld() {
 // what I actually wrote the first time
 
 function sayHello(named) {
-    return ("Hello, " + named + "!")
+    if (named === undefined) {
+        return "Hello, World!"
+    } else {
+        return ("Hello, " + named + "!");
+    }
 }
 

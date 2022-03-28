@@ -25,7 +25,13 @@ describe('checks if sayHello is a defined function', function() {
         // Exercise 3
     });
     it('should return "Hello, Jane!', function () {
-        expect((console.assert(sayHello("Jane") === "Hello, Jane!")) === undefined).toBe(true);
+        expect((console.assert(sayHello("Jane") === "Hello, Jane!")) === undefined).toBe(true)
+    });
+    it("should return Hello, Alex! when \"Alex\" is called", function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex!")
+    });
+    it("should return Hello, Pat! when \"Pat\" is called", function() {
+        expect(sayHello("Pat")).toBe("Hello, Pat!")
     });
 });
 
